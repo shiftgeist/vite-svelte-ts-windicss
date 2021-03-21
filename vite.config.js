@@ -4,5 +4,5 @@ import windicss from "vite-plugin-windicss";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [svelte(), windicss()],
+  plugins: [svelte(), windicss({ safelist: "prose" })],
 });
