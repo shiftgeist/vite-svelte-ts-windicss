@@ -1,15 +1,16 @@
 <script lang="ts">
-  import { getStore } from './hmr-stores'
-  export let id: string
+  import { _ } from "svelte-i18n";
+  import { getStore } from "./hmr-stores";
+  export let id: string;
 
-  const count = getStore(id, 0)
+  const count = getStore(id, 0);
   const increment = () => {
-    $count += 1
-  }
+    $count += 1;
+  };
 </script>
 
 <button {id} on:click={increment}>
-  Clicks: {$count}
+  {$_("buttons.click", { values: { number: $count } })}
 </button>
 
 <style>

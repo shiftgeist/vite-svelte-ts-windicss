@@ -1,0 +1,17 @@
+{
+  "buttons": {
+    "click": "Clicks: {number}",
+    "switch_theme_dark": "Switch to dark mode",
+    "switch_theme_light": "Switch to light mode"
+  },
+  "index": {
+    "title": "Hello world!"
+  },
+  "languages": {
+    "de": "German",
+    "en": "English"
+  },
+  "messages": {
+    "visit_page": "Visit {link} to learn how to build Svelte apps."
+  }
+}

@@ -1,4 +1,8 @@
 {
   "css.validate": false,
-  "svelte.plugin.css.diagnostics.enable": false
+  "svelte.plugin.css.diagnostics.enable": false,
+  "i18n-ally.sortKeys": true,
+  "i18n-ally.keepFulfilled": true,
+  "i18n-ally.localesPaths": ["messages"],
+  "i18n-ally.keystyle": "nested"
 }

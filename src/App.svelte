@@ -11,16 +11,14 @@
 
   <h1>{$_("page_title")}</h1>
 
+  <h1>{$_("index.title")}</h1>
+
   <Counter id="0" />
 
   <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
+    {@html $_("messages.visit_page", {
+      values: { link: '<a href="https://svelte.dev">svelte.dev</a>' },
+    })}
   </p>
 </main>
 

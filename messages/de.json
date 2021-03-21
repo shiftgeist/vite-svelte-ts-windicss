@@ -1,0 +1,17 @@
+{
+  "buttons": {
+    "click": "Klicks: {number}",
+    "switch_theme_dark": "Zu dunklen Theme wechseln",
+    "switch_theme_light": "Zu hellen Theme wechseln"
+  },
+  "index": {
+    "title": "Hallo Welt!"
+  },
+  "languages": {
+    "de": "Deutsch",
+    "en": "Englisch"
+  },
+  "messages": {
+    "visit_page": "Besuchen Sie {link}, um zu erfahren, wie Sie Svelte-Apps erstellen können."
+  }
+}
