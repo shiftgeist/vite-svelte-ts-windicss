@@ -26,11 +26,7 @@
 
 <style>
   main {
-    @apply text-center p-4 mx-auto min-h-screen;
-  }
-
-  :global(.dark) {
-    @apply bg-black;
+    @apply text-center p-2 mx-auto min-h-screen sm:p-4 dark:bg-black;
   }
 
   img {
