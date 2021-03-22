@@ -7,7 +7,7 @@
   import ThemeSwitch from "./lib/ThemeSwitch.svelte";
 </script>
 
-<main class="prose" dark="bg-black">
+<main class="prose">
   <ThemeSwitch />
   <LangSwitch />
 
