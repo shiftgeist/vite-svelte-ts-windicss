@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [
     svelte(svelteConfig),
     windicss({
-      safelist: ["prose"],
+      // safelist: ["prose"],
+      transformCSS: "pre",
     }),
   ],
 });
