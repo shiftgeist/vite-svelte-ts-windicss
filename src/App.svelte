@@ -7,7 +7,7 @@
   import ThemeSwitch from "./lib/ThemeSwitch.svelte";
 </script>
 
-<main class="prose">
+<main class="prose" dark="bg-black">
   <ThemeSwitch />
   <LangSwitch />
 
@@ -26,7 +26,7 @@
 
 <style>
   main {
-    @apply text-center p-2 mx-auto min-h-screen sm:p-4 dark:bg-black;
+    @apply text-center p-4 mx-auto min-h-screen dark:bg-black;
   }
 
   img {
