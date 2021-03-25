@@ -1,5 +1,5 @@
 devDependencies:
-  '@svitejs/vite-plugin-svelte': 0.11.1_svelte@3.35.0+vite@2.1.2
+  '@sveltejs/vite-plugin-svelte': file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz_svelte@3.35.0+vite@2.1.2
   svelte: 3.35.0
   svelte-dark-mode: 1.0.0
   svelte-i18n: 3.3.7_svelte@3.35.0
@@ -52,26 +52,6 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==
-  /@svitejs/vite-plugin-svelte/0.11.1_svelte@3.35.0+vite@2.1.2:
-    dependencies:
-      '@rollup/pluginutils': 4.1.0
-      chalk: 4.1.0
-      debug: 4.3.1
-      hash-sum: 2.0.0
-      require-relative: 0.8.7
-      slash: 3.0.0
-      source-map: 0.7.3
-      svelte: 3.35.0
-      svelte-hmr: 0.13.3_svelte@3.35.0
-      vite: 2.1.2
-    dev: true
-    engines:
-      node: '>=12.0.0'
-    peerDependencies:
-      svelte: ^3.35.0
-      vite: ^2.1.0
-    resolution:
-      integrity: sha512-G4UCAyRvbqr/3RuRrWib7iPZPMBmDgk7kvgCn0js76TGS2NaVce5AoWjWgPR0M5z71P9SBH77e3N/pO70ziBNw==
   /@types/node/14.14.35:
     dev: true
     resolution:
@@ -162,19 +142,6 @@ packages:
     dev: true
     resolution:
       integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
-  /debug/4.3.1:
-    dependencies:
-      ms: 2.1.2
-    dev: true
-    engines:
-      node: '>=6.0'
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    resolution:
-      integrity: sha512-doEwdvm4PCeK4K3RQN2ZC2BYUBaxwLARCqZmMjtF8a51J2Rb0xpVloFRnCODwqjpwnAoao4pelN8l3RJdv3gRQ==
   /debug/4.3.2:
     dependencies:
       ms: 2.1.2
@@ -747,8 +714,32 @@ packages:
     dev: true
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
+  file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz_svelte@3.35.0+vite@2.1.2:
+    dependencies:
+      '@rollup/pluginutils': 4.1.0
+      chalk: 4.1.0
+      debug: 4.3.2
+      hash-sum: 2.0.0
+      require-relative: 0.8.7
+      slash: 3.0.0
+      source-map: 0.7.3
+      svelte: 3.35.0
+      svelte-hmr: 0.13.3_svelte@3.35.0
+      vite: 2.1.2
+    dev: true
+    engines:
+      node: '>=12.0.0'
+    id: file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
+    name: '@sveltejs/vite-plugin-svelte'
+    peerDependencies:
+      svelte: ^3.35.0
+      vite: ^2.1.2
+    resolution:
+      integrity: sha512-ddrwcuEO5DJylUb+UheQTW1caybC8APK12yy1QgmTu95dcBX4ug3N1/aMkNYWJcGzmauWXfxq0xP+SFt8BIjqQ==
+      tarball: file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
+    version: 1.0.0-next.5
 specifiers:
-  '@svitejs/vite-plugin-svelte': ^0.11.1
+  '@sveltejs/vite-plugin-svelte': ./sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
   svelte: ^3.35.0
   svelte-dark-mode: ^1.0.0
   svelte-i18n: ^3.3.7

@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import svelte from "@svitejs/vite-plugin-svelte";
+import svelte from "@sveltejs/vite-plugin-svelte";
 import windicss from "vite-plugin-windicss";
 import svelteConfig from "./svelte.config";
 
@@ -8,7 +8,8 @@ export default defineConfig({
   plugins: [
     svelte(svelteConfig),
     windicss({
-      // safelist: ["prose"],
+      config: "windi.config.js",
+      safelist: [],
       transformCSS: "pre",
     }),
   ],

@@ -1,8 +1,8 @@
 {
   "buttons": {
     "click": "Klicks: {number}",
-    "switch_theme_dark": "Zu dunklen Theme wechseln",
-    "switch_theme_light": "Zu hellen Theme wechseln"
+    "switch_theme_dark": "Zum dunklen Theme wechseln",
+    "switch_theme_light": "Zum hellen Theme wechseln"
   },
   "index": {
     "title": "Hallo Welt!"

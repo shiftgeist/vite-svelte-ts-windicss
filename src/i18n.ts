@@ -28,10 +28,6 @@ let initial = langAliases.find((el) => {
   if (el.active > -1) return el;
 });
 
-console.table(langAliases);
-
-console.log(initial);
-
 init({
   fallbackLocale: "en",
   initialLocale: initial.id,
