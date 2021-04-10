@@ -1,14 +1,14 @@
 devDependencies:
-  '@sveltejs/vite-plugin-svelte': file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz_svelte@3.35.0+vite@2.1.2
-  svelte: 3.35.0
+  '@sveltejs/vite-plugin-svelte': 1.0.0-next.6_svelte@3.37.0+vite@2.1.5
+  svelte: 3.37.0
   svelte-dark-mode: 1.0.0
-  svelte-i18n: 3.3.7_svelte@3.35.0
-  svelte-preprocess: 4.6.9_svelte@3.35.0+typescript@4.2.3
-  svelte-windicss-preprocess: 3.0.2
-  typescript: 4.2.3
-  vite: 2.1.2
-  vite-plugin-windicss: 0.9.6_vite@2.1.2
-  windicss: 2.5.4
+  svelte-i18n: 3.3.9_svelte@3.37.0
+  svelte-preprocess: 4.7.0_svelte@3.37.0+typescript@4.2.4
+  svelte-windicss-preprocess: 3.3.1
+  typescript: 4.2.4
+  vite: 2.1.5
+  vite-plugin-windicss: 0.13.1_vite@2.1.5
+  windicss: 2.5.12
 lockfileVersion: 5.2
 packages:
   /@formatjs/ecma402-abstract/1.6.3:
@@ -52,6 +52,26 @@ packages:
       rollup: ^1.20.0||^2.0.0
     resolution:
       integrity: sha512-TrBhfJkFxA+ER+ew2U2/fHbebhLT/l/2pRk0hfj9KusXUuRXd2v0R58AfaZK9VXDQ4TogOSEmICVrQAA3zFnHQ==
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.6_svelte@3.37.0+vite@2.1.5:
+    dependencies:
+      '@rollup/pluginutils': 4.1.0
+      chalk: 4.1.0
+      debug: 4.3.2
+      hash-sum: 2.0.0
+      require-relative: 0.8.7
+      slash: 3.0.0
+      source-map: 0.7.3
+      svelte: 3.37.0
+      svelte-hmr: 0.14.0_svelte@3.37.0
+      vite: 2.1.5
+    dev: true
+    engines:
+      node: '>=12.0.0'
+    peerDependencies:
+      svelte: ^3.37.0
+      vite: ^2.1.5
+    resolution:
+      integrity: sha512-P+skZslGT+zPXRH9SlEu21LXuFpkQITRcvQb/NRpZHrxj04VDRbuKwksOfq+vDHO/K4HWioXIAQoQnJ3oomItw==
   /@types/node/14.14.35:
     dev: true
     resolution:
@@ -66,16 +86,30 @@ packages:
     dev: true
     resolution:
       integrity: sha512-2XZovu4NwcqmtZtsBR5XYLw18T8cBCnU2USFHTnYLLHz9fkhnoEMoDsqShJIOFsFhn5aJHjweiUUdTrDGujegA==
-  /@windicss/plugin-utils/0.9.6:
+  /@windicss/plugin-utils/0.12.5:
     dependencies:
       debug: 4.3.2
       fast-glob: 3.2.5
+      magic-string: 0.25.7
       micromatch: 4.0.2
+      pirates: 4.0.1
       sucrase: 3.17.1
-      windicss: 2.5.4
+      windicss: 2.5.12
     dev: true
     resolution:
-      integrity: sha512-rpuRPjndF5GR2BZFaISGAwe6DHii16Cfs0/003El6vBxQbWpL75BslfNYeJKAhnRfkqfPxcq4lybxHGWmvsaug==
+      integrity: sha512-4ux2o4s6D/gRTD68os41oxs/0NFk/eSJxHhZL9nN2wy4RGt+pPMQJyOHV56l7zDh9B0ywU5+ZRxDjdw2cl5Yvg==
+  /@windicss/plugin-utils/0.13.1:
+    dependencies:
+      debug: 4.3.2
+      fast-glob: 3.2.5
+      magic-string: 0.25.7
+      micromatch: 4.0.2
+      pirates: 4.0.1
+      sucrase: 3.17.1
+      windicss: 2.5.12
+    dev: true
+    resolution:
+      integrity: sha512-Vr7f7yWxmB5AWwe+iDPV3JbhTlZHbDvM89IfJ0hyP6PqYmZNTtUfMXMbHXZJHVAbQ54dWBMG23WmeC9X327ETA==
   /ansi-styles/4.3.0:
     dependencies:
       color-convert: 2.0.1
@@ -326,6 +360,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
+  /magic-string/0.25.7:
+    dependencies:
+      sourcemap-codec: 1.4.8
+    dev: true
+    resolution:
+      integrity: sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
   /merge2/1.4.1:
     dev: true
     engines:
@@ -430,10 +470,10 @@ packages:
       node: ^10 || ^12 || >=14
     resolution:
       integrity: sha512-1F0Xb2T21xET7oQV9eKuctbM9S7BC0fetoHCc4H13z0PT6haiRLP4T0ZY4XWh7iLP0usgqykT6p9B2RtOf4FPw==
-  /prettier-plugin-svelte/2.2.0_prettier@2.2.1+svelte@3.35.0:
+  /prettier-plugin-svelte/2.2.0_prettier@2.2.1+svelte@3.37.0:
     dependencies:
       prettier: 2.2.1
-      svelte: 3.35.0
+      svelte: 3.37.0
     dev: true
     peerDependencies:
       prettier: ^1.16.4 || ^2.0.0
@@ -510,6 +550,10 @@ packages:
       node: '>= 8'
     resolution:
       integrity: sha512-CkCj6giN3S+n9qrYiBTX5gystlENnRW5jZeNLHpe6aue+SrHcG5VYwujhW9s4dY31mEGsxBDrHR6oI69fTXsaQ==
+  /sourcemap-codec/1.4.8:
+    dev: true
+    resolution:
+      integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
   /strip-indent/3.0.0:
     dependencies:
       min-indent: 1.0.1
@@ -544,21 +588,21 @@ packages:
     dev: true
     resolution:
       integrity: sha512-GjYLoQ7oiv76Eue2pyGtaMXQ5uPpPuLeOXXnCrxbOibzAwuJzpie9soStDQ0pMzXObJiY8fmwZCCA8Y5Pmw/rQ==
-  /svelte-hmr/0.13.3_svelte@3.35.0:
+  /svelte-hmr/0.14.0_svelte@3.37.0:
     dependencies:
-      svelte: 3.35.0
+      svelte: 3.37.0
     dev: true
     peerDependencies:
       svelte: '>=3.19.0'
     resolution:
-      integrity: sha512-gagW62pLQ2lULmvNA3pIZu9pBCYOaGu3rQikUOv6Nokz5VxUgT9/mQLfMxj9phDEKHCg/lgr3i6PkqZDbO9P2Q==
-  /svelte-i18n/3.3.7_svelte@3.35.0:
+      integrity: sha512-Rc4w11U+U30m/cHqOJ/xioFSEAY5fd5muiQC7FL6XJuJAuB2OIJoEZl3KEJR2uO1/f4Bw0PdrugtbxcngSsOtQ==
+  /svelte-i18n/3.3.9_svelte@3.37.0:
     dependencies:
       deepmerge: 4.2.2
       estree-walker: 2.0.2
       intl-messageformat: 9.5.3
       sade: 1.7.4
-      svelte: 3.35.0
+      svelte: 3.37.0
       tiny-glob: 0.2.8
     dev: true
     engines:
@@ -567,15 +611,15 @@ packages:
     peerDependencies:
       svelte: ^3.25.1
     resolution:
-      integrity: sha512-QH/Zi2Rhq8vEJ9+IegSD56NPbnNqJ+m0VgztFjsF0fVCtDMJ1G7OJz8kL+hsUK3zfVRsFo60M0KjFvWyDnspCw==
-  /svelte-preprocess/4.6.9_svelte@3.35.0+typescript@4.2.3:
+      integrity: sha512-0w+4kHH/T5DJ4VvX4N2LxYaKxFIKgfc1yzB08ZUOAuQsWC+zgr95mqfgmQVRJ7GxHxneVJcq33VjOzmXzRmYVA==
+  /svelte-preprocess/4.7.0_svelte@3.37.0+typescript@4.2.4:
     dependencies:
       '@types/pug': 2.0.4
       '@types/sass': 1.16.0
       detect-indent: 6.0.0
       strip-indent: 3.0.0
-      svelte: 3.35.0
-      typescript: 4.2.3
+      svelte: 3.37.0
+      typescript: 4.2.4
     dev: true
     engines:
       node: '>= 9.11.2'
@@ -617,23 +661,25 @@ packages:
         optional: true
     requiresBuild: true
     resolution:
-      integrity: sha512-SROWH0rB0DJ+0Ii264cprmNu/NJyZacs5wFD71ya93Cg/oA2lKHgQm4F6j0EWA4ktFMzeuJJm/eX6fka39hEHA==
-  /svelte-windicss-preprocess/3.0.2:
+      integrity: sha512-iNrY4YGqi0LD2e6oT9YbdSzOKntxk8gmzfqso1z/lUJOZh4o6fyIqkirmiZ8/dDJFqtIE1spVgDFWgkfhLEYlw==
+  /svelte-windicss-preprocess/3.3.1:
     dependencies:
+      '@windicss/plugin-utils': 0.12.5
       chalk: 4.1.0
       prettier: 2.2.1
-      prettier-plugin-svelte: 2.2.0_prettier@2.2.1+svelte@3.35.0
-      svelte: 3.35.0
-      windicss: 2.5.4
+      prettier-plugin-svelte: 2.2.0_prettier@2.2.1+svelte@3.37.0
+      svelte: 3.37.0
+      windicss: 2.5.12
+      windicss-runtime-dom: 0.1.1
     dev: true
     resolution:
-      integrity: sha512-Ldn/JgjAf282xU1AGeD9q6DwZ3ZtRuhsShb9LW9cwb3fb1yiS9bYyAffsTEHDnUMOJIMXZeWxS1lDLigwh8q3A==
-  /svelte/3.35.0:
+      integrity: sha512-l0D3aQz8BoLqn3zNjJaW1OFjqcfHy3nlcPuODio9FlBesAY5/mGbpCWtnmCAegQaq+KDqFFbXHWdE4DU4MVaMw==
+  /svelte/3.37.0:
     dev: true
     engines:
       node: '>= 8'
     resolution:
-      integrity: sha512-gknlZkR2sXheu/X+B7dDImwANVvK1R0QGQLd8CNIfxxGPeXBmePnxfzb6fWwTQRsYQG7lYkZXvpXJvxvpsoB7g==
+      integrity: sha512-TRF30F4W4+d+Jr2KzUUL1j8Mrpns/WM/WacxYlo5MMb2E5Qy2Pk1Guj6GylxsW9OnKQl1tnF8q3hG/hQ3h6VUA==
   /thenify-all/1.6.0:
     dependencies:
       thenify: 3.3.1
@@ -671,25 +717,26 @@ packages:
     dev: true
     resolution:
       integrity: sha512-hcVC3wYEziELGGmEEXue7D75zbwIIVUMWAVbHItGPx0ziyXxrOMQx4rQEVEV45Ut/1IotuEvwqPopzIOkDMf0A==
-  /typescript/4.2.3:
+  /typescript/4.2.4:
     dev: true
     engines:
       node: '>=4.2.0'
     hasBin: true
     resolution:
-      integrity: sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
-  /vite-plugin-windicss/0.9.6_vite@2.1.2:
+      integrity: sha512-V+evlYHZnQkaz8TRBuxTA92yZBPotr5H+WhQ7bD3hZUndx5tGOa1fuCgeSjxAzM1RiN5IzvadIXTVefuuwZCRg==
+  /vite-plugin-windicss/0.13.1_vite@2.1.5:
     dependencies:
-      '@windicss/plugin-utils': 0.9.6
+      '@windicss/plugin-utils': 0.13.1
+      chalk: 4.1.0
       debug: 4.3.2
-      vite: 2.1.2
-      windicss: 2.5.4
+      vite: 2.1.5
+      windicss: 2.5.12
     dev: true
     peerDependencies:
       vite: ^2.0.1
     resolution:
-      integrity: sha512-vNyPTuVyCV34slkbzaARvMOCC93ueuP0bw0ETyoUduCwIjP2NwI9C88b3LneVM46TAEDIzHtlTJjkq+APADVOA==
-  /vite/2.1.2:
+      integrity: sha512-WmFfTLTMSY5gRC3MWX9o72Yni2HRdrtJ2im+cCyZ2W/p4WE6T702zFCScO8Tnz/E08GDx4OH6oFCZWeZYwgxzg==
+  /vite/2.1.5:
     dependencies:
       esbuild: 0.9.6
       postcss: 8.2.8
@@ -702,50 +749,30 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
     resolution:
-      integrity: sha512-K96k5Nb1kywggFwZNGf/NQVZIrjMSvjebYWFIEQRu8AQWtzxatMF8/reExFXebmrfWAT3PTUk6l4zJBkpMtyVg==
-  /windicss/2.5.4:
+      integrity: sha512-tYU5iaYeUgQYvK/CNNz3tiJ8vYqPWfCE9IQ7K0iuzYovWw7lzty7KRYGWwV3CQPh0NKxWjOczAqiJsCL0Xb+Og==
+  /windicss-runtime-dom/0.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-hUNMCoGW01r946w710BDO/3bLgLQrlNRLVqXgCdbMPedIi6z5QFTIkzw+DVCEt6gojmrhy055CJ+ATTCefJTmg==
+  /windicss/2.5.12:
     dev: true
     engines:
       node: '>= 12'
     hasBin: true
     resolution:
-      integrity: sha512-K+w/TOxbY38bIjRyJVgQ29ndZ0xZsbpf4a7wClqyFDQdCTbuCnzChBMpO13BqLmksIaHRzL46TeBRpFyV6n5/A==
+      integrity: sha512-BZ0Ps1C0RlCHBVOPcw/DAReeR9o/mKaoFgkBsVphQ23M5nsvVfVXgGlNJZssjAQsXnlDpj97pnIhtDn1ENBjXw==
   /wrappy/1.0.2:
     dev: true
     resolution:
       integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
-  file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz_svelte@3.35.0+vite@2.1.2:
-    dependencies:
-      '@rollup/pluginutils': 4.1.0
-      chalk: 4.1.0
-      debug: 4.3.2
-      hash-sum: 2.0.0
-      require-relative: 0.8.7
-      slash: 3.0.0
-      source-map: 0.7.3
-      svelte: 3.35.0
-      svelte-hmr: 0.13.3_svelte@3.35.0
-      vite: 2.1.2
-    dev: true
-    engines:
-      node: '>=12.0.0'
-    id: file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
-    name: '@sveltejs/vite-plugin-svelte'
-    peerDependencies:
-      svelte: ^3.35.0
-      vite: ^2.1.2
-    resolution:
-      integrity: sha512-ddrwcuEO5DJylUb+UheQTW1caybC8APK12yy1QgmTu95dcBX4ug3N1/aMkNYWJcGzmauWXfxq0xP+SFt8BIjqQ==
-      tarball: file:sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
-    version: 1.0.0-next.5
 specifiers:
-  '@sveltejs/vite-plugin-svelte': ./sveltejs-vite-plugin-svelte-1.0.0-next.5.tgz
-  svelte: ^3.35.0
+  '@sveltejs/vite-plugin-svelte': 1.0.0-next.6
+  svelte: ^3.37.0
   svelte-dark-mode: ^1.0.0
-  svelte-i18n: ^3.3.7
-  svelte-preprocess: ^4.6.9
-  svelte-windicss-preprocess: ^3.0.2
-  typescript: ^4.2.3
-  vite: ^2.1.2
-  vite-plugin-windicss: ^0.9.6
-  windicss: ^2.5.4
+  svelte-i18n: ^3.3.9
+  svelte-preprocess: ^4.7.0
+  svelte-windicss-preprocess: ^3.3.1
+  typescript: ^4.2.4
+  vite: ^2.1.5
+  vite-plugin-windicss: ^0.13.1
+  windicss: ^2.5.12
