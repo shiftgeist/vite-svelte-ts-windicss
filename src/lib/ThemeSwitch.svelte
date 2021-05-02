@@ -1,27 +1,22 @@
 <script>
   import { _ } from "svelte-i18n";
   import DarkMode from "svelte-dark-mode";
+  import Button from "../shared/Button.svelte";
 
   let theme;
+  let klass = "";
+  export { klass as class };
 
   $: switchTheme = theme === "dark" ? "light" : "dark";
   $: document.body.className = theme;
 </script>
 
-<DarkMode bind:theme />
+<div class={klass}>
+  <DarkMode bind:theme />
 
-<button on:click={() => (theme = switchTheme)}
-  >{theme === "light"
-    ? $_("buttons.switch_theme_dark")
-    : $_("buttons.switch_theme_light")}</button
->
-
-<style>
-  button {
-    @apply border border-gray-300 p-2 rounded;
-  }
-
-  button:hover {
-    @apply bg-gray-200;
-  }
-</style>
+  <Button on:click={() => (theme = switchTheme)}
+    >{theme === "light"
+      ? $_("buttons.switch_theme_dark")
+      : $_("buttons.switch_theme_light")}</Button
+  >
+</div>

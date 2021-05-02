@@ -1,15 +1,9 @@
 <script>
   import { locale, locales } from "svelte-i18n";
+  import Select from "../shared/Select.svelte";
+
+  let klass = "";
+  export { klass as class };
 </script>
 
-<select bind:value={$locale}>
-  {#each $locales as locale}
-    <option value={locale}>{locale}</option>
-  {/each}
-</select>
-
-<style>
-  select {
-    @apply min-w-32;
-  }
-</style>
+<Select options={$locales} bind:value={$locale} class={klass} />

@@ -7,9 +7,13 @@
   import ThemeSwitch from "./lib/ThemeSwitch.svelte";
 </script>
 
-<main class="prose" dark="bg-brand-dark">
-  <ThemeSwitch />
-  <LangSwitch />
+<main
+  class="mx-auto min-h-screen max-w-none text-center p-4 transition-colors prose dark:(prose-light bg-gray-900)"
+>
+  <div class="flex justify-center">
+    <ThemeSwitch class="mr-4" />
+    <LangSwitch class="my-auto" />
+  </div>
 
   <img src={logo} alt="Svelte Logo" />
 
@@ -19,16 +23,12 @@
 
   <p>
     {@html $_("messages.visit_page", {
-      values: { link: '<a href="https://svelte.dev">svelte.dev</a>' },
+      values: { link: '<a href="https://kit.svelte.dev/">kit.svelte.dev</a>' },
     })}
   </p>
 </main>
 
-<style>
-  main {
-    @apply text-center p-4 mx-auto min-h-screen;
-  }
-
+<style global>
   img {
     @apply w-64 h-64 mx-auto;
   }
