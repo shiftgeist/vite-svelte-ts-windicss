@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { locale, locales } from "svelte-i18n";
   import Select from "../shared/Select.svelte";
 

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import { _ } from "svelte-i18n";
   import DarkMode from "svelte-dark-mode";
   import Button from "../shared/Button.svelte";
