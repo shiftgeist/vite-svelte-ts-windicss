@@ -3,6 +3,7 @@
 import { writable } from 'svelte/store'
 import type { Writable } from 'svelte/store'
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 let stores: Record<string, Writable<any>> = {}
 
 export function getStore<T>(id: string, initialValue: T): Writable<T> {

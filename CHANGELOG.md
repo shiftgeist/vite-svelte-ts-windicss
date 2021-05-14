@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Setup Eslint and Prettier
+
 ## 1.0.0 - 2021-05-03
 
 ### Added

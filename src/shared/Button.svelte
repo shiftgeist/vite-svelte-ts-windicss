@@ -1,7 +1,7 @@
 <script lang="ts">
-  let klass = "";
-  export { klass as class };
-  export let id = "";
+  let klass = ''
+  export { klass as class }
+  export let id = ''
 </script>
 
 <button

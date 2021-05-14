@@ -1,8 +1,8 @@
 <script lang="ts">
-  let klass = "";
-  export { klass as class };
-  export let value;
-  export let options;
+  let klass = ''
+  export { klass as class }
+  export let value
+  export let options
 </script>
 
 <select
