@@ -13,7 +13,7 @@ specifiers:
   svelte-dark-mode: ^1.0.0
   svelte-i18n: ^3.3.9
   svelte-preprocess: ^4.7.3
-  svelte-windicss-preprocess: ^4.0.0-beta.17
+  svelte-windicss-preprocess: ^4.0.2
   typescript: ^4.2.4
   vite: ^2.3.2
   vite-plugin-windicss: ^0.16.0-beta.17
@@ -32,7 +32,7 @@ devDependencies:
   svelte-dark-mode: 1.0.0
   svelte-i18n: 3.3.9_svelte@3.38.2
   svelte-preprocess: 4.7.3_svelte@3.38.2+typescript@4.2.4
-  svelte-windicss-preprocess: 4.0.0-beta.17_svelte@3.38.2
+  svelte-windicss-preprocess: 4.0.2_svelte@3.38.2
   typescript: 4.2.4
   vite: 2.3.2
   vite-plugin-windicss: 0.16.0-beta.17_vite@2.3.2
@@ -1304,8 +1304,8 @@ packages:
       typescript: 4.2.4
     dev: true
 
-  /svelte-windicss-preprocess/4.0.0-beta.17_svelte@3.38.2:
-    resolution: {integrity: sha512-OD56NvcBgRmqjhAU+ODeobJmmDnVeXy6NTukdVZoPE4/G9PsoSAJzwHmicFvEEsLpWMVWKMgmqldyzgA5f9COw==}
+  /svelte-windicss-preprocess/4.0.2_svelte@3.38.2:
+    resolution: {integrity: sha512-5F67oLLyX3TvWYVeQ4KzJ9p1/SDyt4esm4J6TIb0fbW3uSecJKenumi5NgmSubOqh3UhIB+WquFQXWcAVQRYyw==}
     dependencies:
       prettier: 2.3.0
       prettier-plugin-svelte: 2.3.0_prettier@2.3.0+svelte@3.38.2
