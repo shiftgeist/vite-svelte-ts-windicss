@@ -10,7 +10,7 @@
     "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "1.0.0-next.9",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.10",
     "@typescript-eslint/eslint-plugin": "^4.23.0",
     "@typescript-eslint/parser": "^4.23.0",
     "eslint": "^7.26.0",
@@ -18,15 +18,15 @@
     "eslint-plugin-svelte3": "^3.2.0",
     "prettier": "^2.3.0",
     "prettier-plugin-svelte": "^2.3.0",
-    "svelte": "^3.38.1",
+    "svelte": "^3.38.2",
     "svelte-dark-mode": "^1.0.0",
     "svelte-i18n": "^3.3.9",
-    "svelte-preprocess": "^4.7.2",
-    "svelte-windicss-preprocess": "^4.0.0-beta.9",
+    "svelte-preprocess": "^4.7.3",
+    "svelte-windicss-preprocess": "^4.0.0-beta.17",
     "typescript": "^4.2.4",
-    "vite": "^2.2.3",
-    "vite-plugin-windicss": "0.16.0-beta.8",
-    "windicss": "3.0.0-beta.5"
+    "vite": "^2.3.2",
+    "vite-plugin-windicss": "^0.16.0-beta.17",
+    "windicss": "^3.0.3"
   },
   "browserslist": [
     "> 1%",

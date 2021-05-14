@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Setup Eslint and Prettier
 
+### Changed
+
+- Upgrade svelte and windicss dependencies
+
 ## 1.0.0 - 2021-05-03
 
 ### Added
