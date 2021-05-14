@@ -2,7 +2,7 @@
 
 This template should help get you started developing with Svelte and TypeScript in Vite.
 
-Also included: Typescript, i18n, VSCode i18n integration, dark theme
+Also included: Typescript, i18n, VSCode integration, dark theme, ESLint, Prettier
 
 ## Getting started
 
