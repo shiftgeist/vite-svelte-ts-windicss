@@ -1,13 +1,14 @@
 import { defineConfig } from 'vite'
-import svelte from '@sveltejs/vite-plugin-svelte'
-import windicss from 'vite-plugin-windicss'
-import svelteConfig from './svelte.config.cjs'
 
-// https://vitejs.dev/config/
+import pluginSvelte from '@sveltejs/vite-plugin-svelte'
+import pluginWindicss from 'vite-plugin-windicss' // not working
+
+import svelteConfig from './svelte.config.js'
+
 export default defineConfig({
   plugins: [
-    svelte(svelteConfig),
-    windicss({
+    pluginSvelte(svelteConfig),
+    pluginWindicss({
       config: 'windi.config.js',
       safelist: [],
       transformCSS: 'pre'
