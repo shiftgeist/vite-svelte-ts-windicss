@@ -1,13 +1,23 @@
 {
   "name": "vite-svelte-ts-windicss",
   "version": "1.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+    "format": "prettier --write --plugin-search-dir=. ."
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "1.0.0-next.9",
+    "@typescript-eslint/eslint-plugin": "^4.23.0",
+    "@typescript-eslint/parser": "^4.23.0",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-svelte3": "^3.2.0",
+    "prettier": "^2.3.0",
+    "prettier-plugin-svelte": "^2.3.0",
     "svelte": "^3.38.1",
     "svelte-dark-mode": "^1.0.0",
     "svelte-i18n": "^3.3.9",
@@ -24,7 +34,8 @@
     "not dead"
   ],
   "prettier": {
-    "printWidth": 80,
-    "trailingComma": "es5"
+    "singleQuote": true,
+    "trailingComma": "none",
+    "printWidth": 80
   }
 }
